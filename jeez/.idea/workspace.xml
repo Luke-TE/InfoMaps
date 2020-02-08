@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cade018-3709-4ce2-b92d-4be0513ee8a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataClasses/Country.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataClasses/Query.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Client.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Client.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -37,6 +48,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -89,25 +104,65 @@
       <option name="project" value="LOCAL" />
       <updated>1581174689694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="beginning socket stuff">
+      <created>1581176112714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581176112714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="adds ciafactbook to data" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds ciafactbook to data" />
+    <MESSAGE value="beginning socket stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="beginning socket stuff" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581174689329">
+    <state x="801" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581176807556">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581174689329" />
+    <state x="801" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581176807556" />
+    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581176112650">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581176112650" />
+    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581176789101">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581176789101" />
+    <state width="1318" height="278" key="GridCell.Tab.0.bottom" timestamp="1581181505060">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1318" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
+    <state width="1318" height="278" key="GridCell.Tab.0.center" timestamp="1581181505060">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1318" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
+    <state width="1318" height="278" key="GridCell.Tab.0.left" timestamp="1581181505060">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1318" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
+    <state width="1318" height="278" key="GridCell.Tab.0.right" timestamp="1581181505060">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1318" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard" timestamp="1581171554777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1581171554777" />
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1581176801351">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581176801351" />
+    <state x="1060" y="125" width="760" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581178449351">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1060" y="125" width="760" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581178449351" />
     <state x="131" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1581171556410">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
