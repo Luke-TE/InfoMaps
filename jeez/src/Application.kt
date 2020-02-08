@@ -1,6 +1,8 @@
 package com.ichack.server
 
 import Client
+import DataClasses.Query
+import DataSearchers.WikiSearcher.WikiSearcher
 import com.fasterxml.jackson.databind.SerializationFeature
 import io.ktor.application.Application
 import io.ktor.application.install
@@ -25,7 +27,7 @@ fun Application.module(testing: Boolean = false) {
     val client = HttpClient(Apache) {
     }
     runBlocking {
-        Client(client).postToWiki(listOf("brazil"), "gdp")
+        println(WikiSearcher(Client(client)).search(Query(listOf("canada", "new zealand"), "gdp")))
     }
 
 }

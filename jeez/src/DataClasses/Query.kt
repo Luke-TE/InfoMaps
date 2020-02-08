@@ -1,5 +1,3 @@
 package DataClasses
 
-import com.ichack.server.DataClasses.Country
-
-data class Query(val country: Country, val searchTerm: String)
+data class Query(val countries: List<String>, val searchTerm: String)

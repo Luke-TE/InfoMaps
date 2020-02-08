@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cade018-3709-4ce2-b92d-4be0513ee8a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataClasses/WikiJsonClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataClasses/WikiInputJsonClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataSearchers/Searcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataSearchers/WikiSearcher/WikiSearcher.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/Country.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/Query.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/Query.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/WikiJsonClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/WikiOutputJsonClass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataSearchers/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Client.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -53,14 +60,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.com.ichack.server.ApplicationKt">
-    <configuration name="FactbookSearcher.FactbookSearcherKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="DataSearchers.FactbookSearcher.FactbookSearcherKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="servercore.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="FactbookSearcher.FactbookSearcherKt" />
+      <option name="MAIN_CLASS_NAME" value="DataSearchers.FactbookSearcher.FactbookSearcherKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,7 +89,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.com.ichack.server.ApplicationKt" />
-        <item itemvalue="Kotlin.FactbookSearcher.FactbookSearcherKt" />
+        <item itemvalue="Kotlin.DataSearchers.FactbookSearcher.FactbookSearcherKt" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581183600070</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Begins work connecting with luke">
+      <created>1581188321211</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581188321211</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,39 +154,52 @@
     <MESSAGE value="adds ciafactbook to data" />
     <MESSAGE value="beginning socket stuff" />
     <MESSAGE value="Adds basic parsing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds basic parsing" />
+    <MESSAGE value="Begins work connecting with luke" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begins work connecting with luke" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="271" width="442" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1581191698187">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="734" y="271" width="442" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581191698187" />
     <state x="801" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581176807556">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="801" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581176807556" />
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581183599908">
+    <state x="568" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581188746153">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581183599908" />
+    <state x="568" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581188746153" />
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581190806233">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581190806233" />
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581188321117">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581188321117" />
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581176789101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581176789101" />
-    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581188179208">
+    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581200477247">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581188179208" />
-    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581188179207">
+    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477247" />
+    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581200477246">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581188179207" />
-    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581188179207">
+    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477246" />
+    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581200477245">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581188179207" />
-    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581188179208">
+    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477245" />
+    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581200477246">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581188179208" />
+    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477246" />
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard" timestamp="1581171554777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -193,5 +220,9 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1011" y="253" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1581187006711" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581192812927">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1581192812927" />
   </component>
 </project>

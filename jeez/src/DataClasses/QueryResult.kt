@@ -1,5 +1,5 @@
 package DataClasses
 
-import com.ichack.server.DataClasses.Country
+data class QueryResult(val country: String, val answer: String?)
 
-data class QueryResult(val country: Country, val answer: String)
+data class QueryResults(val results: List<QueryResult>)
