@@ -1,5 +1,6 @@
 package com.ichack.server
 
+import Client
 import com.fasterxml.jackson.databind.SerializationFeature
 import io.ktor.application.Application
 import io.ktor.application.install
@@ -7,6 +8,7 @@ import io.ktor.client.HttpClient
 import io.ktor.client.engine.apache.Apache
 import io.ktor.features.ContentNegotiation
 import io.ktor.jackson.jackson
+import kotlinx.coroutines.runBlocking
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
@@ -21,6 +23,9 @@ fun Application.module(testing: Boolean = false) {
         }
     }
     val client = HttpClient(Apache) {
+    }
+    runBlocking {
+        Client(client).postToWiki(listOf("brazil"), "gdp")
     }
 
 }

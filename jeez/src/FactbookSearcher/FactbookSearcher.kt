@@ -8,7 +8,7 @@ import com.ichack.server.DataClasses.Country
 import java.io.File
 
 fun main() {
-    FactbookSearcher().search(Query(Country("brazil"), "population"))
+    FactbookSearcher().search(Query(Country("canada"), "languages"))
 }
 
 class FactbookSearcher() {

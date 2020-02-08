@@ -1,16 +1,17 @@
-import DataClasses.Query
-import DataClasses.QueryResult
-import com.ichack.server.DataClasses.Country
+import DataClasses.WikiJsonClass
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.ktor.client.HttpClient
-import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.post
+import io.ktor.client.request.url
 
 class Client(val ktorClient: HttpClient) {
-    suspend fun post(country: Country, query: Query) {
-        val queryResult = ktorClient.post<QueryResult>(
-            HttpRequestBuilder(
-
-            )
-        )
+    suspend fun postToWiki(countries: List<String>, searchTerm: String) {
+        val queryResult = ktorClient.post<String>() {
+            url("https://5d539037.ngrok.io")
+//            headers.append("countries",countries.toString())
+//            headers.append("query",searchTerm)
+            body = jacksonObjectMapper().writeValueAsString(WikiJsonClass(searchTerm, countries))
+        }
+        println(queryResult)
     }
 }
