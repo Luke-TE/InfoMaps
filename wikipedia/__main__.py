@@ -6,13 +6,20 @@ from wiki_interface import get_results
 app = Sanic()
 
 
-@app.route("/")
+@app.route("/", methods=["POST",])
 async def test(request):
-    request = "countries by GDP"
-    countries = ["United Kingdom"]
-    results = get_results(countries, request)
+    params = request.json
+    print(f"json: {request.json}")
+    if 'countries' in params.keys():
+        countries = params['countries']
+    else:
+        countries = []
+    query = params['query'] if 'query' in params.keys() else ""
+    print(f"query: {query}")
+    results = get_results(countries, query)
+    print(results)
     return json(results)
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=8080)
