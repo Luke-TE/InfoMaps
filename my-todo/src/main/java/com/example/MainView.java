@@ -5,11 +5,16 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.awt.image.ColorModel;
+
 
 /**
  * A sample Vaadin view class.
@@ -41,11 +46,34 @@ public class MainView extends VerticalLayout {
      */
     public MainView(@Autowired GreetService service) {
 
+        HorizontalLayout queries = new HorizontalLayout();
+        HorizontalLayout dropDownLists = new HorizontalLayout();
+
         // Use TextField for standard text input
-        TextField textField = new TextField("Your name");
+        TextField textField = new TextField();
+        textField.setPlaceholder("Enter query here");
+
+        Select<String> place = new Select<>();
+
+        place.setItems("World", "Europe", "Asia", "North America",
+          "South America", "Australia", "Africa");
+        place.setPlaceholder("World");
+
+        Select<String> percentage = new Select<>();
+        percentage.setItems("Percentage", "Number");
+        percentage.setPlaceholder("Percentage");
+
+        Select<String> type = new Select<>();
+        type.setItems("Population", "Records", "Number of Things");
+        place.setPlaceholder("Population");
+
+
+        Select<String> colour = new Select<>();
+        colour.setItems("Red", "Blue");
+        colour.setPlaceholder("Red");
 
         // Button click listeners can be defined as lambda expressions
-        Button button = new Button("Say hello",
+        Button button = new Button("Enter",
                 e -> Notification.show(service.greet(textField.getValue())));
 
         // Theme variants give you predefined extra styles for components.
@@ -59,7 +87,12 @@ public class MainView extends VerticalLayout {
         // Use custom CSS classes to apply styling. This is defined in shared-styles.css.
         addClassName("centered-content");
 
-        add(textField, button);
+
+        queries.add(textField, button);
+        dropDownLists.add(place, percentage, type, colour);
+        add(queries, dropDownLists);
+
+        setAlignItems(Alignment.CENTER);
     }
 
 }

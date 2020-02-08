@@ -2,9 +2,11 @@
   "name": "no-name",
   "license": "UNLICENSED",
   "dependencies": {
+    "@amcharts/amcharts4": "^4.8.9",
+    "@amcharts/amcharts4-geodata": "^4.1.11",
     "@polymer/polymer": "3.2.0",
-    "@webcomponents/webcomponentsjs": "^2.2.10",
-    "@vaadin/flow-deps": "./target/frontend"
+    "@vaadin/flow-deps": "./target/frontend",
+    "@webcomponents/webcomponentsjs": "^2.2.10"
   },
   "devDependencies": {
     "webpack": "4.30.0",
