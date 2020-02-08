@@ -18,8 +18,11 @@ async def test(request):
     print(f"query: {query}")
     results = get_results(countries, query)
     print(results)
-    return json(results)
+    print(results.items())
+    output = {'results': results}
+    return json(output)
 
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080)
+    
