@@ -8,6 +8,7 @@ import io.ktor.network.sockets.aSocket
 import io.ktor.network.sockets.openReadChannel
 import io.ktor.network.sockets.openWriteChannel
 import io.ktor.response.respondText
+import io.ktor.util.KtorExperimentalAPI
 import io.ktor.util.cio.write
 import io.ktor.utils.io.readUTF8Line
 import kotlinx.coroutines.Dispatchers
@@ -20,6 +21,7 @@ import java.net.InetSocketAddress
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
+@KtorExperimentalAPI
 @Suppress("unused") // Referenced in application.conf
 @kotlin.jvm.JvmOverloads
 fun Application.module(testing: Boolean = false) {
