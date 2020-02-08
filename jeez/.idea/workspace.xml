@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cade018-3709-4ce2-b92d-4be0513ee8a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataClasses/Query.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Parser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Client.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataClasses/Country.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/Country.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Client.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,20 @@
       <recent name="$PROJECT_DIR$/resources/countrydata" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.FactbookSearcher.FactbookSearcherKt">
+    <configuration name="FactbookSearcher.FactbookSearcherKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="servercore.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="FactbookSearcher.FactbookSearcherKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.ichack.server.ApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="servercore.main" />
       <option name="VM_PARAMETERS" />
@@ -75,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FactbookSearcher.FactbookSearcherKt" />
         <item itemvalue="Kotlin.com.ichack.server.ApplicationKt" />
       </list>
     </recent_temporary>
@@ -111,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581176112714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="beginning socket stuff">
+      <created>1581182086817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581182086818</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,30 +141,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="801" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581176807556" />
-    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581176112650">
+    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581183534103">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581176112650" />
+    <state x="81" y="152" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581183534103" />
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581176789101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581176789101" />
-    <state width="1318" height="278" key="GridCell.Tab.0.bottom" timestamp="1581181505060">
+    <state width="659" height="278" key="GridCell.Tab.0.bottom" timestamp="1581183487749">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1318" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
-    <state width="1318" height="278" key="GridCell.Tab.0.center" timestamp="1581181505060">
+    <state width="659" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581183487749" />
+    <state width="659" height="278" key="GridCell.Tab.0.center" timestamp="1581183487748">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1318" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
-    <state width="1318" height="278" key="GridCell.Tab.0.left" timestamp="1581181505060">
+    <state width="659" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581183487748" />
+    <state width="659" height="278" key="GridCell.Tab.0.left" timestamp="1581183487747">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1318" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
-    <state width="1318" height="278" key="GridCell.Tab.0.right" timestamp="1581181505060">
+    <state width="659" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581183487747" />
+    <state width="659" height="278" key="GridCell.Tab.0.right" timestamp="1581183487748">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1318" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581181505060" />
+    <state width="659" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581183487748" />
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard" timestamp="1581171554777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
