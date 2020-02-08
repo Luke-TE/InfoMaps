@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cade018-3709-4ce2-b92d-4be0513ee8a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataClasses/WikiInputJsonClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataSearchers/Searcher.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataSearchers/WikiSearcher/WikiSearcher.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataClasses/Country.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataClasses/Query.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/Query.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/QueryResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataClasses/WikiJsonClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataClasses/WikiOutputJsonClass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FactbookSearcher/FactbookSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataSearchers/FactbookSearcher/FactbookSearcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Client.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../setup.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581188321211</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Got working with Luke's stuff">
+      <created>1581200620423</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581200620423</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,7 +155,8 @@
     <MESSAGE value="beginning socket stuff" />
     <MESSAGE value="Adds basic parsing" />
     <MESSAGE value="Begins work connecting with luke" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begins work connecting with luke" />
+    <MESSAGE value="Got working with Luke's stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got working with Luke's stuff" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -176,30 +177,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581190806233" />
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581188321117">
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581200620274">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581188321117" />
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581200620274" />
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581176789101">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581176789101" />
-    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581200477247">
+    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581202928967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477247" />
-    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581200477246">
+    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928967" />
+    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581202928966">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477246" />
-    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581200477245">
+    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928966" />
+    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581202928965">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477245" />
-    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581200477246">
+    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928965" />
+    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581202928967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581200477246" />
+    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928967" />
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard" timestamp="1581171554777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
