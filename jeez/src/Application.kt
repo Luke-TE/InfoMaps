@@ -16,6 +16,7 @@ import io.ktor.request.receive
 import io.ktor.response.respond
 import io.ktor.routing.post
 import io.ktor.routing.routing
+import kotlinx.coroutines.runBlocking
 import scrape
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
