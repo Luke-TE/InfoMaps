@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Map} from './Map.js';
-import TextBar from './TextBar'
+import {TextBar} from './TextBar'
 
 class App extends Component {
 

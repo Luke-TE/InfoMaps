@@ -63,7 +63,7 @@ export class Map extends Component {
         heatLegend.width = am4core.percent(100);
         polygonSeries.mapPolygons.template.events.on("over", function(ev) {
             if (!isNaN(ev.target.dataItem.value)) {
-                heatLegend.valueAxis.showTooltipAt(ev.target.dataItem.value)
+                heatLegend.valueAxis.showTooltipAt(ev.target.dataItem.value);
             }
             else {
                 heatLegend.valueAxis.hideTooltip();
@@ -91,7 +91,7 @@ export class Map extends Component {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height: '900px'}}/>
+                    height: '930px'}}/>
             </div>
         );
     }
