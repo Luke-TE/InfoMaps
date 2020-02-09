@@ -13,9 +13,10 @@ import io.ktor.client.engine.apache.Apache
 import io.ktor.features.ContentNegotiation
 import io.ktor.jackson.jackson
 import io.ktor.request.receive
+import io.ktor.response.respond
 import io.ktor.routing.post
 import io.ktor.routing.routing
-import kotlinx.coroutines.runBlocking
+import scrape
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
@@ -29,16 +30,17 @@ fun Application.module(testing: Boolean = false) {
             }
         }
     }
+    val client = Client(HttpClient(Apache) {
+    })
     routing {
         post("/") {
             val post = call.receive<InputQuery>()
+            call.respond(searchRoutine(Query(scrape(post.region), post.queryString), client).toString())
 
         }
     }
-    val client = HttpClient(Apache) {
-    }
-    runBlocking {
-        searchRoutine(Query(listOf("greenland", "denmark", "palestine"), "gdp per capita"), Client(client))
-    }
+//    runBlocking {
+//        searchRoutine(Query(listOf("canada", "denmark", "palestine"), "tallest mountain"), client)
+//    }
 
 }

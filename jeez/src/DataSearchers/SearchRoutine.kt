@@ -7,6 +7,9 @@ import DataSearchers.FactbookSearcher.FactbookSearcher
 import DataSearchers.WikiSearcher.WikiSearcher
 
 fun searchRoutine(query: Query, client: Client): QueryResults? {
+//    processQuery
+//    --->
+
     var results = FactbookSearcher.search(query)
     if (results.results.isNullOrEmpty()) {
         results = WikiSearcher(client).search(query)
