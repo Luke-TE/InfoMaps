@@ -44,4 +44,10 @@ dependencies {
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
     implementation "io.ktor:ktor-network:$ktor_version"
     compile fileTree(dir: '/home/dmv18/ICHACK20/ICHack20/stanford-corenlp-full-2018-10-05', include: '*.jar')
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+
 }

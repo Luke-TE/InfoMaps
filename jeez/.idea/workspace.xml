@@ -4,15 +4,9 @@
     <list default="true" id="9cade018-3709-4ce2-b92d-4be0513ee8a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/FrontEndClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/FrontEndClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stanford-corenlp-full-2018-10-05/xom.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -121,7 +115,7 @@
     <configuration name="Server" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.Server" />
       <module name="servercore.main" />
-      <option name="VM_PARAMETERS" value="-Xmx4g" />
+      <option name="VM_PARAMETERS" value="-Xmx6g" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.*" />
@@ -216,7 +210,7 @@
       <workItem from="1581187800972" duration="505000" />
       <workItem from="1581188324698" duration="1722000" />
       <workItem from="1581190675473" duration="16000" />
-      <workItem from="1581190707070" duration="8979000" />
+      <workItem from="1581190707070" duration="25730000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581171960678</created>

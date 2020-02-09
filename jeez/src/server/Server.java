@@ -42,6 +42,6 @@ public class Server {
 //        } catch (IOException e) {
 //            throw new RuntimeException("Ded");
 //        }
-        System.out.println(parser.parse("Tomorrow it will rain."));
+        parser.parse("this");
     }
 }
