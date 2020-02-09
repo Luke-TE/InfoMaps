@@ -56,9 +56,12 @@ def get_results(countries, query):
 
             URL = f"https://restcountries.eu/rest/v2/name/{country}"
             r = requests.get(url=URL)
-            data = r.json()[0]
-            print(data)
-            print(data['alpha2Code'])
+            try:
+                data = r.json()[0]
+            except:
+                continue
+
+            # print(data['alpha2Code'])
             field_dict['id'] = data['alpha2Code']
 
             for index, table_cell in enumerate(table_cells):
