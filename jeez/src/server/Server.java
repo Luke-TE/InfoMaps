@@ -1,4 +1,4 @@
-package server;
-
-public class Server {
-}
+//package server;
+//
+//public class Server {
+//}
