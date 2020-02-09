@@ -37,11 +37,6 @@ fun Application.module(testing: Boolean = false) {
         post("/") {
             val post = call.receive<InputQuery>()
             call.respond(searchRoutine(Query(scrape(post.region), post.queryString), client).toString())
-
         }
     }
-//    runBlocking {
-//        searchRoutine(Query(listOf("canada", "denmark", "palestine"), "tallest mountain"), client)
-//    }
-
 }
