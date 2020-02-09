@@ -5,9 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Client.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/FrontEndClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stanford-corenlp-full-2018-10-05/xom.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -52,7 +55,26 @@
       <recent name="$PROJECT_DIR$/resources/countrydata" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.com.ichack.server.ApplicationKt">
+  <component name="RunManager" selected="Kotlin.server.Server">
+    <configuration name="jeez [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="DataSearchers.FactbookSearcher.FactbookSearcherKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="servercore.main" />
       <option name="VM_PARAMETERS" />
@@ -79,8 +101,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="server.FrontEndClient" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="servercore.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="server.FrontEndClient" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server.Server" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="servercore.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.jeez [dependencies]" />
+      <item itemvalue="Kotlin.DataSearchers.FactbookSearcher.FactbookSearcherKt" />
+      <item itemvalue="Kotlin.com.ichack.server.ApplicationKt" />
+      <item itemvalue="Kotlin.server.FrontEndClient" />
+      <item itemvalue="Kotlin.server.Server" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.server.Server" />
+        <item itemvalue="Gradle.jeez [dependencies]" />
+        <item itemvalue="Kotlin.server.FrontEndClient" />
         <item itemvalue="Kotlin.com.ichack.server.ApplicationKt" />
         <item itemvalue="Kotlin.DataSearchers.FactbookSearcher.FactbookSearcherKt" />
       </list>
@@ -173,57 +231,73 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="568" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581188746153" />
-    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581190806233">
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581208521762">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581190806233" />
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581200620274">
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581208521762" />
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581208508604">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581200620274" />
-    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581176789101">
+    <state x="889" y="180" width="777" height="803" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581208508604" />
+    <state x="711" y="326" width="489" height="567" key="DetectedRootsChooserDialog" timestamp="1581206526675">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581176789101" />
-    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581202928967">
+    <state x="711" y="326" width="489" height="567" key="DetectedRootsChooserDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581206526675" />
+    <state x="744" y="367" width="735" height="484" key="FileChooserDialogImpl" timestamp="1581206517631">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928967" />
-    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581202928966">
+    <state x="744" y="367" width="735" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581206517631" />
+    <state width="937" height="278" key="GridCell.Tab.0.bottom" timestamp="1581207526895">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928966" />
-    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581202928965">
+    <state width="937" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581207526895" />
+    <state width="937" height="278" key="GridCell.Tab.0.center" timestamp="1581207526893">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928965" />
-    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581202928967">
+    <state width="937" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581207526893" />
+    <state width="937" height="278" key="GridCell.Tab.0.left" timestamp="1581207526892">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581202928967" />
+    <state width="937" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581207526892" />
+    <state width="937" height="278" key="GridCell.Tab.0.right" timestamp="1581207526894">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="937" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581207526894" />
+    <state x="182" y="116" width="1536" height="872" key="MergeDialog" timestamp="1581205060579">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="182" y="116" width="1536" height="872" key="MergeDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581205060579" />
+    <state x="665" y="270" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1581205060598">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="665" y="270" width="580" height="564" key="MultipleFileMergeDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581205060598" />
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard" timestamp="1581171554777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="28" y="394" width="883" height="319" key="NewModule_or_Project.wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1581171554777" />
-    <state x="449" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1581176801351">
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1581206530716">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581176801351" />
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581206530716" />
     <state x="1060" y="125" width="760" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581178449351">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1060" y="125" width="760" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581178449351" />
-    <state x="131" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1581171556410">
+    <state x="131" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1581208795599">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="131" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581171556410" />
+    <state x="131" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581208795599" />
+    <state x="719" y="346" width="471" height="413" key="git4idea.merge.GitMergeDialog" timestamp="1581204959662">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="719" y="346" width="471" height="413" key="git4idea.merge.GitMergeDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581204959662" />
     <state x="1011" y="253" key="run.anything.popup" timestamp="1581187006711">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1011" y="253" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1581187006711" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581192812927">
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581207212378">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1581192812927" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1581207212378" />
   </component>
 </project>

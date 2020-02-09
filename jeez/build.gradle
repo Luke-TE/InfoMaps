@@ -45,5 +45,8 @@ dependencies {
     implementation "io.ktor:ktor-network:$ktor_version"
     implementation "io.ktor:ktor-client-cio:$ktor_version"
     implementation "io.ktor:ktor-jackson:$ktor_version"
-    compile fileTree(dir: '/home/dmv18/ICHACK20/ICHack20/stanford-corenlp-full-2018-10-05', include: '*.jar')
+    implementation "edu.stanford.nlp:stanford-corenlp:3.9.2"
+    implementation 'edu.stanford.nlp:stanford-parser:3.9.2'
+    compile fileTree(dir: '/home/hillierd/ICHACK20/ICHack20/stanford-corenlp-full-2018-10-05', include: '*.jar')
+
 }
