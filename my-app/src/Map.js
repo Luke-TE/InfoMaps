@@ -37,15 +37,14 @@ export class Map extends Component {
 
         // hover
         let hs = polygonTemplate.states.create("hover");
-        hs.properties.fill = am4core.color("#367B25");
+        hs.properties.fill = am4core.color("#67797b");
 
 
 
-        polygonSeries.exclude = ["AQ"];
+        polygonSeries.exclude = ["AQ","GF", "PR"];
 
 
         polygonSeries.dataSource.url = "http://localhost:3001/init.json";
-        // polygonSeries.dataSource.parser = "am4core.JSONParser";
 
 
 
@@ -54,8 +53,8 @@ export class Map extends Component {
         polygonSeries.heatRules.push({
             "property": "fill",
             "target": polygonSeries.mapPolygons.template,
-            "min" : am4core.color("#ffa199"),
-            "max" : am4core.color("#AAAA00")
+            "min" : am4core.color("#d9f7ff"),
+            "max" : am4core.color("#78aa4c")
         });
         let heatLegend = container.createChild(am4maps.HeatLegend);
         heatLegend.series = polygonSeries;
