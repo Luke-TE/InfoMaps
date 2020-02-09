@@ -1,6 +1,6 @@
 from sanic import Sanic
 from sanic.response import json
-
+import requests
 from wiki_interface import get_results
 
 app = Sanic()
@@ -17,10 +17,12 @@ async def test(request):
     query = params['query'] if 'query' in params.keys() else ""
     print(f"query: {query}")
     results = get_results(countries, query)
-    print(results)
-    print(results.items())
-    output = {'results': results}
-    return json(output)
+
+
+    # print(results)
+    # print(results.items())
+    # output = {'results': results}
+    return json(results)
 
 
 if __name__ == '__main__':

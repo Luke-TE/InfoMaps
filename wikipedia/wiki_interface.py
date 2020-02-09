@@ -1,4 +1,5 @@
 import wikipedia
+import requests
 from bs4 import BeautifulSoup
 
 COUNTRY_ALIASES = ["country", "countries", "nation", "nations"]
@@ -30,7 +31,7 @@ def get_results(countries, query):
 
     col_names[val_index] = "value"
 
-    country_to_data = dict()
+    country_to_data = list()
     table_rows = table.find_all('tr')
     for table_row in table_rows:
         table_cells = table_row.find_all('td')
@@ -52,6 +53,14 @@ def get_results(countries, query):
 
         if len(countries) == 0 or country.lower() in countries:
             field_dict = dict()
+
+            URL = f"https://restcountries.eu/rest/v2/name/{country}"
+            r = requests.get(url=URL)
+            data = r.json()[0]
+            print(data)
+            print(data['alpha2Code'])
+            field_dict['id'] = data['alpha2Code']
+
             for index, table_cell in enumerate(table_cells):
                 if index == country_col_index:
                     field_dict[col_names[country_col_index]] = country
@@ -65,7 +74,7 @@ def get_results(countries, query):
                     else:
                         field_dict[col_names[index]] = table_cell.string.rstrip()
 
-            country_to_data[country] = field_dict
+            country_to_data.append(field_dict)
 
     return country_to_data
 
