@@ -32,12 +32,12 @@ export class Map extends Component {
 
         let polygonTemplate = polygonSeries.mapPolygons.template;
         polygonTemplate.tooltipText = "{name}\n {value}";
-        polygonTemplate.fill = am4core.color("#999");
+        polygonTemplate.fill = am4core.color("#bea3b3");
 
 
         // hover
         let hs = polygonTemplate.states.create("hover");
-        hs.properties.fill = am4core.color("#67797b");
+        hs.properties.fill = am4core.color("#8f6faa");
 
 
 
@@ -53,8 +53,8 @@ export class Map extends Component {
         polygonSeries.heatRules.push({
             "property": "fill",
             "target": polygonSeries.mapPolygons.template,
-            "min" : am4core.color("#d9f7ff"),
-            "max" : am4core.color("#78aa4c")
+            "min" : am4core.color("#a2bdc5"),
+            "max" : am4core.color("#3ba7e3")
         });
         let heatLegend = container.createChild(am4maps.HeatLegend);
         heatLegend.series = polygonSeries;
