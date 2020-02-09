@@ -21,6 +21,15 @@ def get_results(countries, query):
     if table_index is None:
         return {}
 
+    num_table_cols = get_num_table_cols(table)
+
+    if country_col_index == num_table_cols - 1:
+        val_index = country_col_index - 1
+    else:
+        val_index = country_col_index + 1
+
+    col_names[val_index] = "value"
+
     country_to_data = dict()
     table_rows = table.find_all('tr')
     for table_row in table_rows:
