@@ -1,1 +1,10 @@
+/.gradle
+/.idea
+/out
+/build
+*.iml
+*.ipr
+*.iws
+
+jeez/build/
 /stanford-corenlp-full-2018-10-05
