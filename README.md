@@ -2,6 +2,7 @@
 Automated geographical data extractor and infographic generator.
 
 Originally an entry for IC Hack 2020.
+Warning: This is not currently in a usable state.
 
 ### What it does
 * Gets geographical data from multiple online sources of data.
