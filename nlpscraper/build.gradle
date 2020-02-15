@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.infomaps'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+//	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+//	implementation "io.ktor:ktor-server-netty:$ktor_version"
+//	implementation "ch.qos.logback:logback-classic:$logback_version"
+//	implementation "io.ktor:ktor-server-core:$ktor_version"
+//	implementation "io.ktor:ktor-html-builder:$ktor_version"
+//	implementation "org.jetbrains:kotlin-css-jvm:1.0.0-pre.31-kotlin-1.2.41"
+//	implementation "io.ktor:ktor-client-core:$ktor_version"
+//	implementation "io.ktor:ktor-client-core-jvm:$ktor_version"
+//	implementation "io.ktor:ktor-client-apache:$ktor_version"
+//	testImplementation "io.ktor:ktor-server-tests:$ktor_version"
+//	implementation "io.ktor:ktor-network:$ktor_version"
+//	compile fileTree(dir: '/home/dmv18/ICHACK20/ICHack20/stanford-corenlp-full-2018-10-05', include: '*.jar')
+//	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+//	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+//
+//	// https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+//	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+}
+
+test {
+	useJUnitPlatform()
+}

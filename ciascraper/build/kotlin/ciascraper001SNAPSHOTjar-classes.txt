@@ -1,0 +1,1 @@
+/home/luke/Projects/infomaps/ciascraper/build/classes/kotlin/main/com/infomaps/ciascraper/CiascraperApplication.class:/home/luke/Projects/infomaps/ciascraper/build/classes/kotlin/main/com/infomaps/ciascraper/CiascraperApplicationKt.class
