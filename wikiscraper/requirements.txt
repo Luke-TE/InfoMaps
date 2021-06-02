@@ -20,7 +20,7 @@ sanic==19.12.2
 sniffio==1.1.0
 soupsieve==1.9.5
 ujson==1.35 ; sys_platform != 'win32' and implementation_name == 'cpython'
-urllib3==1.25.8
+urllib3==1.26.5
 uvloop==0.14.0 ; sys_platform != 'win32' and implementation_name == 'cpython'
 websockets==8.1
 wikipedia==1.4.0
